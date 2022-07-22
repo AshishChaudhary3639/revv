@@ -1,44 +1,14 @@
-import { Box, Button, Container, Flex,Heading,Image,Spacer,Text } from '@chakra-ui/react'
-import React, { useRef,Component } from 'react'
-import LandingModal from './LandingModal'
-import DateModal from "./DateModal"
-import Slider from "react-slick"
+import { Box, Button, Container, Flex,Heading,Image,Text } from '@chakra-ui/react'
+import React, { useRef} from 'react'
 import TopSearch from './TopSearch'
+import Slider from 'react-slick'
+import SafeSlide from "./SafeSlide"
+import WhyRevv from './WhyRev'
+import FeaturedSlide from './FeaturedSlide'
 
 const LandingPage = () => {
-  const featuredref=useRef(null)
-  const featured=[
-    {
-      id:1,
-      src:"https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png",
-      alt:"image-1",
-      height:"180px"
-    },
-    {
-      id:2,
-      src:"https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png",
-      alt:"image-2",
-      height:"180px"
-    },
-    {
-      id:3,
-      src:"https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png",
-      alt:"image-3",
-      height:"180px"
-    },
-    {
-      id:4,
-      src:"https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png",
-      alt:"image-4",
-      height:"180px"
-    },
-  ]
-
-  const senitized=[
-    {id:1,src:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/thumbnails/Group+84.png",alt:"image-1",height:"180px"},
-    {id:2,src:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_01-min.jpg",alt:"image-2",height:"180px"},
-    {id:3,src:"https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_02-min.jpg",alt:"image-3",height:"180px"}
-  ]
+  const SlideRef=useRef(null)
+ 
   return (
     <>
     <Container maxW='100%' h="90vh" bg='#fff7e2' centerContent>
@@ -53,73 +23,19 @@ const LandingPage = () => {
     </Container>
     <Container maxW="100%" bg="#f1f4f8" h="auto">
       <Box w="90%"  m="auto" >
-        <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
-          <Heading color="gray" p="10">Featured</Heading>
-          <Box>
-            <Button>{"< "}</Button>
-            <Button>{">"}</Button>
-          </Box>
-        </Flex>
-        <Flex w="93%" alignItems="center" justifyContent="center" gap="20px" m="auto">
-            {featured.map((e)=>(
-             <Box  >
-               <Image src={e.src} alt={e.alt} height={e.height}/>
-              </Box>
-            ))}
- 
+       
+        <Box w="93%" justifyContent="center" m="auto" gap="30px">
+            <FeaturedSlide/>
+        </Box>
          
-        </Flex>
-        <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
-          <Heading color="gray" p="10">Sanitized {"&"} safe cars</Heading>
-          <Box>
-            <Button>{"< "}</Button>
-            <Button>{">"}</Button>
-          </Box>
-        </Flex>
-        <Flex w="100%" alignItems="center" justifyContent="center" gap="20px">
-          {senitized.map((e,ind)=>(
-          <Box  >
-            <Image key={ind}   src={e.src} alt={e.alt} height={e.height} />
-          </Box>
-
-          ))}
-         
-         
-        </Flex>
-        <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
-          <Heading color="gray" p="10">Why revv?</Heading>
-          <Box>
-            <Button>{"< "}</Button>
-            <Button>{">"}</Button>
-          </Box>
-        </Flex>
-        <Flex w="90%" justifyContent="center" m="auto" gap="30px">
-          <Flex  alignItems="center" justifyContent="space-evenly" bg="white" borderRadius="6px" p="2">
-            <Image  height="50px" src='https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/home.png' alt='Dan Abramov' />
-            <Box>
-              <Heading size="md" color="gray">Home delivery {"&"} return</Heading>
-              <Text color="gray">On-time doorstep serice,at your preferred location and time</Text>
-            </Box>
-          </Flex>
-          <Flex  alignItems="center" justifyContent="space-evenly" bg="white" borderRadius="6px" p="2">
-            <Image  height="50px" src='https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/price.png' alt='Dan Abramov' />
-            <Box>
-              <Heading color="gray" size="md">Flexble pricing</Heading>
-              <Text color="gray">Choose 'Ultimate kms' or 'with fuels' plans</Text>
-            </Box>
-          </Flex>
-          <Flex  alignItems="center" justifyContent="space-evenly" bg="white" borderRadius="6px" p="2">
-            <Image  height="50px" src='https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/maintained.png' alt='Dan Abramov' />
-            <Box>
-              <Heading size="md" color="gray">Well maintained cars</Heading>
-              <Text color="gray">Regular service {"&"} maintainance; inspected before each</Text>
-            </Box>
-          </Flex>
-         
-        </Flex>
+        <Box w="93%" justifyContent="center" m="auto" gap="30px">
+            <SafeSlide/>
+        </Box>
+        <Box w="93%"  m="auto" >
+           <WhyRevv/>
+        </Box>
         <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
           <Heading color="gray" p="10">FAQ</Heading>
-         
         </Flex>
         <Box p="5" bg="white" borderRadius="7px" w="93%" m="auto" >
           <Box p="5">
