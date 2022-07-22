@@ -28,10 +28,6 @@ const Hyundai = () => {
        <Heading size="lg" mt="40px">How it works</Heading>
        <HowWorks/>
     </Box>
-    <Box w="87%" m="auto">
-       <Heading size="lg" mt="40px">FAQ</Heading>
-       <HowWorks/>
-    </Box>
     </>
   )
 }
