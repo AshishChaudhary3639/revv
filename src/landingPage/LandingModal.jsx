@@ -1,4 +1,4 @@
-import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, useDisclosure,Text, Heading, Input, Box, Flex, Spacer, Image } from "@chakra-ui/react"
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure,Text, Heading,  Flex, Image } from "@chakra-ui/react"
 import { useState } from "react"
 
 function LandingModal() {

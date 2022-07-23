@@ -28,7 +28,7 @@ const HowWorks = () => {
             </Box>
             <Box w="20%">
                 <Circle border="15px solid lightgray" boxShadow="dark-lg" size='120px' >
-                    <Image p="8px" src="https://cdn-icons-png.flaticon.com/128/89/89102.png" alt=""/>
+                    <Image p="8px" src="https://cdn-icons-png.flaticon.com/128/89/89102.png" alt="book-and-pay"/>
                 </Circle>
                 <Heading size="md" mt="40px">Receive</Heading>
                 <Text>We will deliver the car to your doorstep</Text>

@@ -1,6 +1,5 @@
-import { Box, Button, FormErrorMessage, FormHelperText,FormControl, Input, Flex, Text, Spacer, Modal} from '@chakra-ui/react'
+import { Box, Button, FormErrorMessage, FormHelperText,FormControl, Input, Flex, Text} from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useToast } from '@chakra-ui/react'
 import SignupModal2 from '../component/Modal'
 

@@ -1,13 +1,11 @@
 import { Box, Button, Container, Flex,Heading,Image,Text } from '@chakra-ui/react'
-import React, { useRef} from 'react'
+import React from 'react'
 import TopSearch from './TopSearch'
-import Slider from 'react-slick'
 import SafeSlide from "./SafeSlide"
 import WhyRevv from './WhyRev'
 import FeaturedSlide from './FeaturedSlide'
 
 const LandingPage = () => {
-  const SlideRef=useRef(null)
  
   return (
     <>

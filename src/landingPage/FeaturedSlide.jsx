@@ -25,16 +25,16 @@ export default function FeaturedSlide(){
            
 
             <div style={{padding:"5px", width:"100%"}}>
-                <img style={{width:"95%",borderRadius:"16px"}} src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png' alt='image-1' height="170px" />
+                <img style={{width:"95%",borderRadius:"16px"}} src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png' alt='feature-1' height="170px" />
             </div>
             <div style={{paddingLeft:"15px"}}>
-                <img  style={{width:"95%",borderRadius:"16px"}} src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png' alt='image-1' height="180px" />
+                <img  style={{width:"95%",borderRadius:"16px"}} src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png' alt='feature-2' height="180px" />
             </div>
             <div style={{padding:"5px", width:"100%"}}>
-                <img style={{width:"95%"}}  src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png' alt='image-1' height="180px" />
+                <img style={{width:"95%"}}  src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png' alt='feature-3' height="180px" />
             </div>
             <div style={{padding:"5px", width:"100%"}}>
-                <img style={{width:"95%",borderRadius:"16px"}}  src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png' alt='image-1' height="180px" />
+                <img style={{width:"95%",borderRadius:"16px"}}  src='https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png' alt='feature-2' height="180px" />
             </div>
           
            
