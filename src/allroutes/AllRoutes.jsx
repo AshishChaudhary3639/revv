@@ -1,9 +1,8 @@
 import React from 'react'
 import Hyundai from '../hyundaiPage/Hyundai'
 import {Routes,Route} from "react-router-dom"
-import SignupModal from '../signupPage/SignupModal'
 import LandingPage from '../landingPage/LandingPage'
-import FAQ from '../faq/FAQ'
+import FAQData from '../faq/FAQData'
 
 const AllRoutes = () => {
   return (
@@ -11,7 +10,7 @@ const AllRoutes = () => {
         <Routes>
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/hyundai" element={<Hyundai/>}/>
-            <Route path="/FAQ" element={<FAQ/>}/>
+            <Route path="/FAQData" element={<FAQData/>}/>
         </Routes>
     </>
   )

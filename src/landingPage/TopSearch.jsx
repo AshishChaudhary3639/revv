@@ -9,11 +9,19 @@ const TopSearch = () => {
         <Box w="100%" h="70vh" bg="white" borderRadius='10px' boxShadow= "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" mt="15px">
             <Box mt="20px" pt="15px">
               <Flex  gap={6} bg="#49a6ba" w="70%" color="white" borderRadius="8px" m="auto" p="5px" >
-                <Box textAlign="center" bg="white" borderRadius="5px" color="black" p="3px">
-                  <Heading size="md">Rentals</Heading>
-                  <Text>For hours {"&"} days</Text>
+                <Box >
+                  <Box textAlign="center" bg="white" borderRadius="5px" color="black" p="3px" >
+                    <Heading size="md">Rentals</Heading>
+                    <Text>For hours {"&"} days</Text>
+                    <Flex h="5px" justifyContent="space-evenly">
+                      <Box transform="rotate(45deg)"   w="12px" h="12px" bg="white" m="0px" borderRadius="10px 2px 2px 2px"></Box>
+                    </Flex>
+                  </Box>
                 </Box>
-                <Spacer/>
+                <Box>
+                  <Heading size="md">Subscribe</Heading>
+                  <Text>For months{"&"} years</Text>
+                </Box>
               </Flex>
                 <Box p="5px" mt="15" >
                   <Flex justifyContent="center">

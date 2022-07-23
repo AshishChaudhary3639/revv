@@ -20,7 +20,7 @@ const LandingNav = () => {
             <ButtonGroup gap='2'>
                 <Link to="hyundai"><Button colorScheme='teal' variant='outline'>Hyundai Subscription</Button></Link>
                 <Button colorScheme='teal' variant='outline'>Mahindra Subscription</Button>
-                <Link to="/FAQ"><Button colorScheme='teal' variant='outline'>FAQ</Button></Link>
+                <Link to="/FAQData"><Button colorScheme='teal' variant='outline'>FAQ</Button></Link>
                 <Button >
                   <SignupModal />
                 </Button>
