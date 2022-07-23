@@ -7,7 +7,7 @@ import SignupModal from '../signupPage/SignupModal'
 
 const LandingNav = () => {
   return (
-    <Box>
+    <Box >
         <Flex minWidth='max-content' alignItems='center' gap='2' color="black" w="88%" m="auto">
             <Link to="/"><Button  variant='outline'> <Icon as={ArrowBackIcon}/></Button></Link>
 
@@ -20,7 +20,7 @@ const LandingNav = () => {
             <ButtonGroup gap='2'>
                 <Link to="hyundai"><Button colorScheme='teal' variant='outline'>Hyundai Subscription</Button></Link>
                 <Button colorScheme='teal' variant='outline'>Mahindra Subscription</Button>
-                <Button>FAQ</Button>
+                <Link to="/FAQ"><Button colorScheme='teal' variant='outline'>FAQ</Button></Link>
                 <Button >
                   <SignupModal />
                 </Button>

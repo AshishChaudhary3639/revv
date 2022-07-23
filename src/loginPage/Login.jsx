@@ -1,8 +1,12 @@
-import { Box, Button, FormErrorMessage, FormHelperText,FormControl, Input, Flex, Text, Spacer} from '@chakra-ui/react'
+import { Box, Button, FormErrorMessage, FormHelperText,FormControl, Input, Flex, Text} from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useToast } from '@chakra-ui/react'
+import SignupModal2 from '../component/Modal'
+
 
 const Signup = () => {
+     const toast = useToast()
+
     const [email,setEmail]=useState("")
     const [password,setPassword]=("")
 
@@ -41,15 +45,23 @@ const Signup = () => {
             </FormControl>
             <Flex justifyContent="space-evenly" w="60%">
               <Text>Don't have account yet?</Text>
-              <Link to="signupModal"><Text color="blue"> Signup</Text></Link>
+             <Button color="blue" variant="link"> <SignupModal2/></Button>
               
             </Flex>
               
           
         </Box>
         <Box  mt="10px">
-
-              <Button>Submit</Button>
+        <Button  onClick={() =>
+                    toast({
+                      title: 'Account created.',
+                      description: "You are successfuly logedin.",
+                      status: 'success',
+                      duration: 9000,
+                      isClosable: true,
+                    })
+                   }
+             >Submit</Button>
         </Box>
 
        

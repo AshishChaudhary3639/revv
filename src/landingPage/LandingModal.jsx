@@ -1,4 +1,4 @@
-import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, useDisclosure,Text, Heading, Input, Box, Flex, Spacer } from "@chakra-ui/react"
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure,Text, Heading,  Flex, Image } from "@chakra-ui/react"
 import { useState } from "react"
 
 function LandingModal() {
@@ -7,7 +7,14 @@ function LandingModal() {
 
     return (
       <>
-        <Button variant='ghost' onClick={onOpen} w="100%">Location</Button>
+        <Button 
+            variant='ghost' 
+            onClick={onOpen} 
+            w="100%">
+            <Flex justifyContent="start">
+                <Image w="30px" src="https://cdn-icons.flaticon.com/png/128/2838/premium/2838912.png?token=exp=1658509074~hmac=fe725146b07e47e11c4cf7739b5a1003"/>
+                
+                </Flex> Location</Button>
   
         <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} scrollBehavior={scrollBehavior}>
           <ModalOverlay />

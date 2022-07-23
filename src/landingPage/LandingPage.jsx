@@ -1,17 +1,15 @@
 import { Box, Button, Container, Flex,Heading,Image,Text } from '@chakra-ui/react'
-import React, { useRef} from 'react'
+import React from 'react'
 import TopSearch from './TopSearch'
-import Slider from 'react-slick'
 import SafeSlide from "./SafeSlide"
 import WhyRevv from './WhyRev'
 import FeaturedSlide from './FeaturedSlide'
 
 const LandingPage = () => {
-  const SlideRef=useRef(null)
  
   return (
     <>
-    <Container maxW='100%' h="90vh" bg='#fff7e2' centerContent>
+    <Container maxW='100%' h="90vh" bg='#fff7e2' centerContent >
       <Flex w="100%" h="70vh" gap="20px" alignItems="center" justifyContent="center">
         <Box w="47%" >
           <TopSearch/>
