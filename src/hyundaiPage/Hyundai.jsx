@@ -7,7 +7,14 @@ const Hyundai = () => {
   return (
     <>
     <Container maxW='100%' h="auto"  centerContent m="0px" p="0px">
-        <Flex w="100%" h="90vh" gap="20px" bg='#5e7175' justifyContent="center" >
+        <Flex 
+            w="100%" 
+            h="90vh" 
+            gap="20px" 
+            background="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejDyPr9eRs0puyVWlhlY4SDLAd-d7LhlgEw&usqp=CAU') center/cover no-repeat"  
+            justifyContent="center" 
+            objectFit="cover"
+            >
           <Box w="47%" >
             <TopSearch/>
           </Box>

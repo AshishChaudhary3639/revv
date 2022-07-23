@@ -1,4 +1,6 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Icon, Image, Text } from "@chakra-ui/react";
+import { ArrowBackIcon,ArrowForwardIcon } from '@chakra-ui/icons'
+
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,8 +13,14 @@ export default function WhyRevv(){
         <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
           <Heading color="gray" p="10">Why revv?</Heading>
           <Box>
-            <Button onClick={()=>SlideRef.current.slickPrev()}>{"< "}</Button>
-            <Button onClick={()=>SlideRef.current.slickNext()}>{">"}</Button>
+            <Button onClick={()=>SlideRef.current.slickPrev()}>
+              <Icon as={ArrowBackIcon}/>
+
+            </Button>
+            <Button onClick={()=>SlideRef.current.slickNext()}>
+                <Icon as={ArrowForwardIcon}/>
+
+            </Button>
           </Box>
         </Flex>
         <Slider ref={SlideRef} slidesToShow={3}>

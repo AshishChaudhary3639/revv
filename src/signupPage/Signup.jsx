@@ -1,7 +1,9 @@
 import { Box, Button, FormErrorMessage, FormHelperText,FormControl, Input} from '@chakra-ui/react'
 import React, { useState } from 'react'
+import { useToast } from '@chakra-ui/react'
 
 const Signup = () => {
+  const toast = useToast()
     const [email,setEmail]=useState("")
     const [user,setUser]=useState("")
     const [password,setPassword]=("")
@@ -14,6 +16,7 @@ const Signup = () => {
         <Box >
            <FormControl isInvalid={isUser}>
               <Input 
+                  value={user}
                   onChange={(e)=>setUser(e.target.value)}  
                   type="text" placeholder="Enter user"/>
 
@@ -28,7 +31,9 @@ const Signup = () => {
            <FormControl isInvalid={isEmail}>
 
               <Input 
-                  onChange={(e)=>setEmail(e.target.value)}  
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
+                    
                   type="email" 
                   placeholder="Enter Email"/>
                   {!isEmail ? (
@@ -41,6 +46,7 @@ const Signup = () => {
            <FormControl isInvalid={isPassword}>
             
               <Input 
+                  value={password}
                   onChange={(e)=>setPassword(e.target.value)} 
                   type="password" 
                   placeholder="Enter Password"/>
@@ -57,7 +63,18 @@ const Signup = () => {
         </Box>
         <Box  mt="10px">
 
-              <Button>Submit</Button>
+              <Button  
+            
+              onClick={() =>
+                    toast({
+                      title: 'Account created.',
+                      description: "Your account successfuly created.",
+                      status: 'success',
+                      duration: 9000,
+                      isClosable: true,
+                    })
+                   }
+             >Submit</Button>
         </Box>
 
        

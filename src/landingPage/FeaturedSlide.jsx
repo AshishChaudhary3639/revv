@@ -1,4 +1,5 @@
-import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Icon, Image } from "@chakra-ui/react";
+import { ArrowBackIcon,ArrowForwardIcon } from '@chakra-ui/icons'
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,8 +12,13 @@ export default function FeaturedSlide(){
         <Flex justifyContent="space-between" w="93%" alignItems="center" m="auto">
           <Heading color="gray" p="10">Featured</Heading>
           <Box>
-            <Button onClick={()=>sliderRef.current.slickPrev()}>{"< "}</Button>
-            <Button onClick={()=>sliderRef.current.slickNext()}>{">"}</Button>
+            <Button onClick={()=>sliderRef.current.slickPrev()}>
+              <Icon as={ArrowBackIcon}/>
+            </Button>
+            <Button onClick={()=>sliderRef.current.slickNext()}>
+              <Icon as={ArrowForwardIcon}/>
+            
+            </Button>
           </Box>
         </Flex>
         <Slider ref={sliderRef} slidesToShow={3}>

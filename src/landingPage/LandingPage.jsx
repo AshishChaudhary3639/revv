@@ -11,7 +11,7 @@ const LandingPage = () => {
  
   return (
     <>
-    <Container maxW='100%' h="90vh" bg='#fff7e2' centerContent>
+    <Container maxW='100%' h="90vh" bg='#fff7e2' centerContent >
       <Flex w="100%" h="70vh" gap="20px" alignItems="center" justifyContent="center">
         <Box w="47%" >
           <TopSearch/>

@@ -6,7 +6,7 @@ import LandingNav from './navbar/LandingNav';
 function App() {
   return (
     <Box>
-     <LandingNav/>
+     <LandingNav />
      <AllRoutes/>
     </Box>
   );
